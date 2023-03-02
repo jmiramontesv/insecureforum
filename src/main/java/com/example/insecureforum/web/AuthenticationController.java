@@ -1,5 +1,5 @@
 package com.example.insecureforum.web;
-
+//Adding comments to diff commit
 import com.example.insecureforum.database.UserDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

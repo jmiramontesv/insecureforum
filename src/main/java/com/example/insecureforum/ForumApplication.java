@@ -1,5 +1,5 @@
 package com.example.insecureforum;
-
+// Adding comments to diff commit
 import net.ttddyy.dsproxy.listener.logging.SLF4JLogLevel;
 import net.ttddyy.dsproxy.support.ProxyDataSourceBuilder;
 import org.springframework.boot.SpringApplication;
