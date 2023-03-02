@@ -28,3 +28,14 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+
+- task: FortifyScanCentralSAST@7
+  inputs:
+    scanCentralCtrlUrl: 'https://scsastctrl.oxxo.fortifyhosted.com/scancentral-ctrl/'
+    scanCentralClientToken: '6K1zdMJq9oQRpGIVU9GxZGhwtplc7s11shRUpf2djk4yZeex'
+    sscUrl: 'https://ssc.oxxo.fortifyhosted.com/'
+    sscCiToken: 'cf37185a-0807-4cf2-a546-2180c54db8e4'
+    uploadToSSC: true
+    applicationName: 'InsecureForum'
+    applicationVersion: '1.0'
+    buildFailureCriteria: '[fortify priority order]:critical'
