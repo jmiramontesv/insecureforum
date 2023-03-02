@@ -40,3 +40,5 @@ steps:
     applicationVersion: '1.0'
     buildFailureCriteria: '[fortify priority order]:critical'
     buildTool: 'mvn'
+    skipBuild: true
+    email: 'jorge.miramontes@microfocus.com'
