@@ -46,7 +46,7 @@ jobs:
       #   For other build tools, add your build commands to the workflow to download necessary dependencies and prepare according to Fortify SCA documentation.
       - name: Perform SAST Scan
         #run: scancentral -url ${SC_CTRL_URL} start $BUILD_OPTS -upload -application $APPLICATION -version $VERSION -uptoken $SSC_UPLOAD_TOKEN
-        run: scancentral -url ${SC_CTRL_URL} start $BUILD_OPTS -application $APPLICATION -version $VERSION -uptoken $SSC_UPLOAD_TOKEN
+        run: scancentral -url ${SC_CONTROLLER_URL} start $BUILD_OPTS -upload -application $APPLICATION -version $VERSION -uptoken $SSC_UPLOAD_TOKEN
         env:                                            
           SC_CONTROLLER_URL: ${{ secrets.SC_CTRL_URL }}
           SSC_UPLOAD_TOKEN: ${{ secrets.SC_SAST_CLIENT_AUTH_TOKEN }}
