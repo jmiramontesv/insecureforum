@@ -1,5 +1,21 @@
 # Starter pipeline
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'github.com_jmiramontesv'
+    userRepository: 'jmiramontesv/insecureforum'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
