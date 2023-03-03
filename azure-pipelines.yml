@@ -45,6 +45,6 @@ steps:
     applicationName: 'InsecureForum'
     applicationVersion: '1.0'
     buildFailureCriteria: '[fortify priority order]:critical'
-    buildTool: 'mvn'
+    buildTool: 'none'
     skipBuild: true
     email: 'jorge.miramontes@microfocus.com'
