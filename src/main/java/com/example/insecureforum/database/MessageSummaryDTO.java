@@ -1,5 +1,5 @@
 package com.example.insecureforum.database;
-//Adding comments to diff commit
+
 public class MessageSummaryDTO {
 
     private long id;

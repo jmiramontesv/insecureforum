@@ -1,5 +1,5 @@
 package com.example.insecureforum.database;
-//Adding comments to diff commit
+
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
