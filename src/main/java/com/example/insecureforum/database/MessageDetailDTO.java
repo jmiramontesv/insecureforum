@@ -1,5 +1,5 @@
 package com.example.insecureforum.database;
-
+//Adding comments to diff commit
 public class MessageDetailDTO extends MessageSummaryDTO {
 
     private String body;
