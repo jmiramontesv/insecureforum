@@ -29,6 +29,12 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
 
+- task: NexusIqPipelineTask@1
+  inputs:
+    nexusIqService: 'Nexus IQ Oxxo PoV'
+    organizationId: '2c2c75caad80450d93c501bbf60a8209'
+    applicationId: 'IFORUM'
+    stage: 'Build'
 - task: FortifyScanCentralSAST@7
   inputs:
     scanCentralCtrlUrl: 'https://scsastctrl.oxxo.fortifyhosted.com/scancentral-ctrl/'
