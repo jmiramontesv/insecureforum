@@ -1,5 +1,5 @@
 package com.example.insecureforum.web;
-//Adding comments to diff commit
+
 import com.example.insecureforum.database.MessageDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
