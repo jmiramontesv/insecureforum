@@ -61,3 +61,14 @@ jobs:
         with:
            name: scancentral-logs
            path: ~/.fortify/scancentral/log
+
+      ### Análisis de SCA con Nexus IQ
+      - name: Nexus IQ Policy Evaluation
+        uses: sonatype-nexus-community/iq-github-action@master
+        with:
+          serverUrl: https://nexusiq.oxxo.fortifyhosted.com/
+          username: customeradmin-NAQGdW
+          password: HFXyg5A3meID8wl7
+          applicationId: IFORUM
+          stage: Build
+          target: ./target/
